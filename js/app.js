@@ -22,7 +22,7 @@ function turnLoadScreenOn(){
         
         setTimeout(() => {
             callDisplayOn();
-        }, 15000);
+        }, 1000);
     }
 
     screenOn = true;

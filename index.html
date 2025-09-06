@@ -3,37 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ipod classic 6th gen</title>
+    <meta name="description" content="ipod classic 6th generation">
+    <meta name="author" content="melyssa nimeth">
+    <title>rondoelectro's ipod</title>
     <script src="https://kit.fontawesome.com/ed95a6cdc5.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
     <noscript>You need to enable JavaScript to run this app</noscript>
     <div class="ipod">
-            <div class="ipod-display-off"></div>
-            <div class="ipod-load-screen">
-                <marquee id="loading-phrase" direction="left">Bring Back Physical Media</marquee>
-            </div>
-            <div class="ipod-display-on">
-                <div class="music-display">
-                    <iframe src="https://www.youtube.com/embed/-fWgQrL3Ul0?si=Y-gc9NjBw2xJNI5W&controls=0&autoplay=1" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay" frameborder="0"></iframe>
-                    <h1 id="music-title">2002 au japon</h1>
-                    <p id="artist">POiSON GiRL FRiEND</p>
-                </div>
-            </div>
-            <div class="ipod-btn">
-                <div class="ipod-center-btn" onclick="turnLoadScreenOn()"></div>
-                <p id="menu">MENU</p>
-                <img id="fast-rewind" src="assets/fast-rewind.svg" alt="">
-                <img id="play-pause" src="assets/play-pause-icon.svg" alt="">
-                <img id="fast-foward" src="assets/fast-foward.svg" alt="">
-            </div>
+        <div class="ipod-display-off"></div>
+        <div class="ipod-load-screen">
+            <marquee id="loading-phrase" direction="left">Welcome</marquee>
+        </div>
+        <div class="ipod-display-on">
+            <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="275px" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/br/song/serpentskirt-remastered/1444074348"></iframe>
+        </div>
+        <div class="ipod-btn">
+            <div class="ipod-center-btn" onclick="turnLoadScreenOn()"></div>
+            <p id="menu">MENU</p>
+            <img id="fast-rewind" src="src/assets/fast-rewind.svg" alt="fast rewind icon">
+            <img id="play-pause" src="src/assets/play-pause-icon.svg" alt="play and pause icon">
+            <img id="fast-foward" src="src/assets/fast-foward.svg" alt="fast foward icon">
+        </div>
     </div>
 
 
-    <script src="./js/app.js"></script>
+    <script src="src/js/app.js"></script>
 </body>
 </html>

@@ -10,7 +10,6 @@ body{
     height: 100vh;
     align-content: center;
     background: repeating-radial-gradient(rgb(245, 243, 243) 10%, rgb(253, 248, 248) 15%);
-    /* background: repeating-radial-gradient(rgb(182, 181, 181) 10%, rgb(253, 248, 248) 15%); */
 }
 
 .ipod{
@@ -59,8 +58,7 @@ body{
 }
 
 #menu, #fast-rewind, #play-pause, #fast-foward{
-    position: absolute;
-}
+    position: absolute;}
 
 #menu{
     inset: 7% 40%;
@@ -95,13 +93,6 @@ body{
     filter: drop-shadow(0 5px 0.50rem #ffffff);
 }
 
-#apple-icon{
-    width: 30%;
-    margin: auto;
-    opacity: 0;
-    animation: 4s show-loading-element ease-in-out 1.5s;
-}
-
 #loading-phrase{
     opacity: 0;
     margin: auto;
@@ -110,50 +101,23 @@ body{
     font-weight: 500;
     font-size: 5rem;
     color: rgb(36, 35, 35);
-    animation: 13s show-loading-element ease-in-out 1.5s;
+    animation: 5s show-loading-element ease-in-out 1.5s;
 }
 
 /* SCREEN ON */
 .ipod-display-on{
     display: none;
-    align-items: center;
-    justify-content: center;
     width: 17vw;
     height: 27vh;
     border-radius: 10px;
     border: 6px solid rgb(99, 99, 99);
-    background: linear-gradient(117deg, hsl(0, 0%, 93%) 40%, hsl(0, 0%, 91%) 40%);
+    background: #F8F8FA;
     filter: drop-shadow(0 0 0.50rem #ffffff);
 }
 
-.music-display, .music-display img, .music-display p{
-    position: static;
-}
-
-.music-display{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 95%;
-    height: 95%;
-}
-
 iframe{
-    width: 145px;
-    margin-bottom: 15px;
+    width: 100%;
 }
-
-#music-title{
-    font-size: 1.3rem;
-    color: rgb(107, 107, 107);
-}
-
-#artist{
-    font-size: 1.1rem;
-    color: rgb(82, 82, 82);
-}
-
 
 @keyframes show-loading-element{
     0%{

@@ -1,3 +1,6 @@
+
+
+
 const ipodDisplayOff = document.querySelector('.ipod-display-off');
 const ipodLoadScreen = document.querySelector('.ipod-load-screen');
 const ipodDisplayOn = document.querySelector('.ipod-display-on');
@@ -16,25 +19,30 @@ const albumsList = document.getElementById('albums-list');
     });
 });
 
-let screenOn = false;
-function turnLoadScreenOn(){
-    if(!screenOn){
-        ipodDisplayOff.style.display = 'none';
-        ipodLoadScreen.style.display = 'flex';
-        
-        setTimeout(() => {
-            turnDisplayOn();
-        }, 8000); 
+function initTurnLoadScreenOn(){
+    let screenOn = false;
+
+    turnLoadScreenOn();
+
+    function turnLoadScreenOn(){
+        if(!screenOn){
+            ipodDisplayOff.style.display = 'none';
+            ipodLoadScreen.style.display = 'flex';
+            
+            setTimeout(() => {
+                turnDisplayOn();
+            }, 8000); 
+        }
+        screenOn = true;
     }
-    screenOn = true;
-}
-
-function turnDisplayOn(){
-    ipodDisplayOff.style.display = 'none';
-    ipodLoadScreen.style.display = 'none';
-    ipodDisplayOn.style.display = 'flex';
-
-    initAlbumsScroll(); 
+    
+    function turnDisplayOn(){
+        ipodDisplayOff.style.display = 'none';
+        ipodLoadScreen.style.display = 'none';
+        ipodDisplayOn.style.display = 'flex';
+        
+        initAlbumsScroll(); 
+    }
 }
 
 

@@ -1,3 +1,12 @@
+function setBodyHeight() {
+  document.body.style.height = `${window.innerHeight}px`;
+}
+
+setBodyHeight();
+
+window.addEventListener('resize', setBodyHeight);
+
+
 const ipodDisplayOff = document.querySelector('.ipod-display-off');
 const ipodLoadScreen = document.querySelector('.ipod-load-screen');
 const ipodDisplayOn = document.querySelector('.ipod-display-on');

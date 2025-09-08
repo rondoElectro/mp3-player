@@ -6,6 +6,7 @@ let screenOn = false;
 
 const ipodCenterBtn = document.querySelector('.ipod-center-btn');
 
+
 ['click', 'touchstart'].forEach(event => {
     ipodCenterBtn.addEventListener(event, () => {
         ipodCenterBtn.style.background = 'linear-gradient(rgb(236, 235, 235) 20%, rgb(209, 209, 209))';
@@ -24,14 +25,14 @@ function turnLoadScreenOn(){
         ipodLoadScreen.style.display = 'flex';
         
         setTimeout(() => {
-            callDisplayOn();
+            turnDisplayOn();
         }, 8000);
     }
 
     screenOn = true;
 }
 
-function callDisplayOn(){
+function turnDisplayOn(){
     ipodDisplayOff.style.display = 'none';
     ipodLoadScreen.style.display = 'none';
     ipodDisplayOn.style.display = 'flex';

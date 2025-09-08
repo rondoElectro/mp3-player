@@ -45,8 +45,10 @@ body{
     background: conic-gradient(white, rgb(241, 241, 241), white);
     filter: drop-shadow(0 5px 0.50rem #cacaca);
     cursor: pointer;
+    outline: none;                   
+    -webkit-touch-callout: none;
 }
-
+    
 .ipod-center-btn{
     position: absolute;
     z-index: 1;

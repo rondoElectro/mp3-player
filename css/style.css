@@ -230,4 +230,17 @@ body{
     .ipod{
         max-width: 80dvw;
     }
+
+    #albums-list li{
+        width: 30vw;
+    }
+
+    #albums-list li h3{
+    font-size: 1rem;
+}
+
+#albums-list li p{
+        font-size: 0.8rem;
+    }
+
 }

@@ -86,7 +86,6 @@ body{
     width: 30px;
 }
 
-/*LOADING SCREEN */
 .ipod-load-screen{
     display: none;
     width: 17vw;
@@ -109,7 +108,6 @@ body{
     animation: 5s show-loading-element ease-in-out 1.5s;
 }
 
-/* SCREEN ON */
 .ipod-display-on{
     display: none;
     width: 17vw;

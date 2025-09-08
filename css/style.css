@@ -138,7 +138,7 @@ iframe{
         border-radius: 25px;
     }
 
-    .ipod-display-off{
+    .ipod-display-off, .ipod-load-screen, .ipod-display-on{
         width: 85%;
         height: 27vh;
     }
@@ -159,7 +159,7 @@ iframe{
         border-radius: 20px;
     }
 
-    .ipod-display-off{
+    .ipod-display-off, .ipod-load-screen, .ipod-display-on{
         width: 90%;
         height: 27vh;
         border-radius: 10px;

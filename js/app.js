@@ -6,14 +6,17 @@ let screenOn = false;
 
 const ipodCenterBtn = document.querySelector('.ipod-center-btn');
 
+['click', 'touchstart'].forEach(event => {
+    ipodCenterBtn.addEventListener(event, () => {
+        ipodCenterBtn.style.background = 'linear-gradient(rgb(236, 235, 235) 20%, rgb(209, 209, 209))';
+    });
+});
 
-ipodCenterBtn.addEventListener('click', () => {
-    ipodCenterBtn.style.background = 'linear-gradient(rgb(236, 235, 235) 20%, rgb(209, 209, 209)';
-})
-
-ipodCenterBtn.addEventListener('mouseout', () => {
-    ipodCenterBtn.style.background = 'linear-gradient(rgb(209, 209, 209) 60%, rgb(236, 235, 235))';
-})
+['mouseout', 'touchend'].forEach(event => {
+    ipodCenterBtn.addEventListener(event, () => {
+        ipodCenterBtn.style.background = 'linear-gradient(rgb(209, 209, 209) 60%, rgb(236, 235, 235))';
+    });
+});
 
 function turnLoadScreenOn(){
     if(!screenOn){

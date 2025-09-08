@@ -140,7 +140,7 @@ iframe{
 
     .ipod-display-off, .ipod-load-screen, .ipod-display-on{
         width: 85%;
-        height: 27vh;
+        height: 29vh;
     }
 
     .ipod-btn{
@@ -149,6 +149,10 @@ iframe{
 
     .ipod-center-btn{
         width: 37%;
+    }
+
+    #loading-phrase{
+        font-size: 4.7rem;
     }
 }
 

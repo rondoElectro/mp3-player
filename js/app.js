@@ -1,11 +1,8 @@
 const ipodDisplayOff = document.querySelector('.ipod-display-off');
 const ipodLoadScreen = document.querySelector('.ipod-load-screen');
 const ipodDisplayOn = document.querySelector('.ipod-display-on');
-
-let screenOn = false;
-
 const ipodCenterBtn = document.querySelector('.ipod-center-btn');
-
+const albumsList = document.getElementById('albums-list');
 
 ['click', 'touchstart'].forEach(event => {
     ipodCenterBtn.addEventListener(event, () => {
@@ -19,6 +16,7 @@ const ipodCenterBtn = document.querySelector('.ipod-center-btn');
     });
 });
 
+let screenOn = false;
 function turnLoadScreenOn(){
     if(!screenOn){
         ipodDisplayOff.style.display = 'none';
@@ -26,9 +24,8 @@ function turnLoadScreenOn(){
         
         setTimeout(() => {
             turnDisplayOn();
-        }, 8000);
+        }, 8000); 
     }
-
     screenOn = true;
 }
 
@@ -36,5 +33,36 @@ function turnDisplayOn(){
     ipodDisplayOff.style.display = 'none';
     ipodLoadScreen.style.display = 'none';
     ipodDisplayOn.style.display = 'flex';
+
+    initAlbumsScroll(); 
 }
 
+
+let scrollDirection = 0;
+
+function initAlbumsScroll() {
+    function scrollStep() {
+        if (scrollDirection !== 0) {
+            albumsList.scrollLeft += scrollDirection * 5;
+            requestAnimationFrame(scrollStep);
+        }
+    }
+
+    albumsList.addEventListener('mousemove', (event) => {
+        const rect = albumsList.getBoundingClientRect();
+        const positionX = event.clientX - rect.left;
+        const edgeThreshold = 50;
+
+        if (positionX <= edgeThreshold) {
+            scrollDirection = -1;
+            requestAnimationFrame(scrollStep);
+        } else if (positionX >= rect.width - edgeThreshold) {
+            scrollDirection = 1;
+            requestAnimationFrame(scrollStep);
+        } else {
+            scrollDirection = 0;
+        }
+    });
+
+    albumsList.addEventListener('mouseleave', () => scrollDirection = 0);
+}

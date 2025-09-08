@@ -48,7 +48,7 @@ body{
     outline: none;                   
     -webkit-touch-callout: none;
 }
-    
+
 .ipod-center-btn{
     position: absolute;
     z-index: 1;
@@ -120,8 +120,49 @@ body{
     filter: drop-shadow(0 0 0.50rem #ffffff);
 }
 
-iframe{
+#albums-list {
+    overflow-x: auto;             
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;    
+    scrollbar-width: none;     
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
     width: 100%;
+}
+
+#albums-list::-webkit-scrollbar {
+    display: none; 
+}
+
+#albums-list li{
+    flex: 0 0 auto;
+    list-style-type: none;
+    width: 48%;
+    margin: 0 10px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(192, 191, 191);
+    border-radius: 10px;
+    filter: drop-shadow(0 10px 0.75rem #afafaf);
+}
+
+#albums-list li h3{
+    font-weight: 500;
+}
+
+#albums-list li p{
+    font-weight: 400;
+}
+
+#albums-list li:hover{
+    transition: all ease-in-out 1s;
+    scale: 1.1;
+}
+
+#albums-list img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 @keyframes show-loading-element{

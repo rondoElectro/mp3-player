@@ -230,14 +230,14 @@ body{
     }
 
     #albums-list li{
-        width: 30vw;
+        width: 27vw;
     }
 
     #albums-list li h3{
     font-size: 1rem;
 }
 
-#albums-list li p{
+    #albums-list li p{
         font-size: 0.8rem;
     }
 

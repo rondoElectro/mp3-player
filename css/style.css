@@ -180,13 +180,13 @@ body{
 @media (max-width:1720px){
     .ipod{
         max-width: 21vw;
-        min-height: 65vh;
+        min-height: 65dvh;
         border-radius: 25px;
     }
 
     .ipod-display-off, .ipod-load-screen, .ipod-display-on{
         width: 85%;
-        height: 29vh;
+        height: 29dvh;
     }
 
     .ipod-btn{
@@ -205,13 +205,13 @@ body{
 @media (max-width:768px){
     .ipod{
         max-width: 65vw;
-        min-height: 65vh;
+        min-height: 65dvh;
         border-radius: 20px;
     }
 
     .ipod-display-off, .ipod-load-screen, .ipod-display-on{
         width: 90%;
-        height: 27vh;
+        height: 27dvh;
         border-radius: 10px;
     }
 

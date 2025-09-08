@@ -229,16 +229,16 @@ body{
         max-width: 80dvw;
     }
 
-    #albums-list li{
-        width: 27vw;
+     #albums-list img{
+        width: 90%;
     }
 
     #albums-list li h3{
-    font-size: 1rem;
-}
+        font-size: 0.8rem;
+    }
 
     #albums-list li p{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
 }
